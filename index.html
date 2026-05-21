@@ -1,260 +1,532 @@
-<!DOCTYPE html><html lang="es">
+          <!DOCTYPE html><html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curso Globoflexia Creativo y Personalizado | Tan Barbudo</title>
-  <meta name="description" content="Aprende globoflexia creativa desde cero con Tan Barbudo. Curso online, comunidad por WhatsApp, bonus, menú de globos y acompañamiento." />
-  <style>
-    :root {
-      --red: #ef233c;
-      --green: #20c997;
-      --blue: #118ab2;
-      --yellow: #ffd166;
-      --dark: #1f2937;
-      --light: #fffaf0;
-      --white: #ffffff;
-      --shadow: 0 18px 45px rgba(31, 41, 55, 0.16);
-      --radius: 28px;
+  <title>Curso de Globoflexia Creativa desde Cero | Tan Barbudo</title>
+  <meta nam([tallerministerioinfantil2-0.netlify.app](https://tallerministerioinfantil2-0.netlify.app/)) content="Aprende globoflexia creativa desde cero con Tan Barbudo. Curso online para cumpleaños, recreación, eventos, ministerio y emprendimiento. Incluye comunidad, bonus y acompañamiento." />  <style>
+    :root{
+      --tan-red:#ff3347;
+      --tan-yellow:#f5b23c;
+      --tan-green:#3bb592;
+      --tan-blue:#073b4c;
+      --tan-cream:#fefcf8;
+      --tan-soft:#fff3d8;
+      --white:#ffffff;
+      --gray:#4b5563;
+      --shadow:0 20px 55px rgba(7,59,76,.18);
+      --radius:32px;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--light); color: var(--dark); line-height: 1.6; }
-    a { text-decoration: none; color: inherit; }
-    .container { width: min(1120px, 92%); margin: auto; }
-    .topbar { position: sticky; top: 0; z-index: 20; background: rgba(255, 250, 240, 0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(31, 41, 55, 0.08); }
-    .nav { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; gap: 18px; }
-    .brand { font-weight: 900; font-size: 1.1rem; display: flex; align-items: center; gap: 8px; }
-    .nav-links { display: flex; gap: 18px; align-items: center; font-size: 0.95rem; }
-    .btn { display: inline-flex; justify-content: center; align-items: center; gap: 8px; border: 0; border-radius: 999px; padding: 15px 24px; font-weight: 900; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; }
-    .btn:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
-    .btn-red { background: linear-gradient(135deg, var(--red), #ff6b6b); color: white; }
-    .btn-blue { background: linear-gradient(135deg, var(--blue), #5dd9ff); color: white; }
-    .hero { position: relative; overflow: hidden; padding: 70px 0 50px; }
-    .hero::before, .hero::after { content: ""; position: absolute; border-radius: 999px; opacity: 0.28; z-index: -1; }
-    .hero::before { width: 280px; height: 280px; background: var(--yellow); top: 25px; right: -80px; }
-    .hero::after { width: 220px; height: 220px; background: var(--green); bottom: 10px; left: -80px; }
-    .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: 40px; }
-    .badge { display: inline-flex; align-items: center; gap: 8px; background: white; border: 2px dashed var(--red); padding: 9px 15px; border-radius: 999px; font-weight: 800; margin-bottom: 18px; box-shadow: 0 10px 25px rgba(31, 41, 55, 0.08); }
-    h1 { font-size: clamp(2.4rem, 6vw, 5rem); line-height: 0.98; margin: 0 0 22px; letter-spacing: -2px; }
-    .highlight { color: var(--red); }
-    .subtitle { font-size: clamp(1.05rem, 2vw, 1.35rem); max-width: 680px; margin-bottom: 24px; }
-    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
-    .chip { background: white; border-radius: 999px; padding: 9px 14px; font-weight: 800; box-shadow: 0 8px 20px rgba(31, 41, 55, 0.08); }
-    .hero-card { background: white; border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); transform: rotate(2deg); border: 5px solid var(--yellow); }
-    .hero-card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 22px; display: block; background: linear-gradient(135deg, #ffe8a3, #dff7ff); }
-    .hero-note { margin-top: 12px; text-align: center; font-weight: 900; color: var(--blue); }
-    section { padding: 70px 0; }
-    .section-title { font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.05; margin: 0 0 18px; letter-spacing: -1px; text-align: center; }
-    .section-text { max-width: 760px; margin: 0 auto 34px; text-align: center; font-size: 1.1rem; }
-    .grid { display: grid; gap: 20px; }
-    .grid-3 { grid-template-columns: repeat(3, 1fr); }
-    .grid-2 { grid-template-columns: repeat(2, 1fr); }
-    .grid-4 { grid-template-columns: repeat(4, 1fr); }
-    .card { background: white; border-radius: var(--radius); padding: 26px; box-shadow: 0 10px 30px rgba(31, 41, 55, 0.08); border: 1px solid rgba(31, 41, 55, 0.06); }
-    .card h3 { margin: 0 0 10px; font-size: 1.35rem; }
-    .icon { width: 54px; height: 54px; border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 14px; background: var(--yellow); }
-    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; }
-    .before-after { min-height: 280px; }
-    .bad { background: linear-gradient(135deg, #f3f4f6, #ffffff); border: 3px dashed #9ca3af; }
-    .good { background: linear-gradient(135deg, #fff2b8, #d8fff0); border: 3px solid var(--green); }
-    .big-emoji { font-size: 5rem; margin: 10px 0; }
-    .label { display: inline-block; padding: 7px 12px; border-radius: 999px; font-weight: 900; color: white; background: var(--red); margin-bottom: 10px; }
-    .good .label { background: var(--green); }
-    .features { background: linear-gradient(135deg, var(--blue), #0b6c86); color: white; }
-    .features .card { color: var(--dark); border-top: 8px solid var(--yellow); }
-    .learn .card { border-top: 8px solid var(--red); }
-    .learn .card:nth-child(even) { border-top-color: var(--blue); }
-    .learn .card:nth-child(3n) { border-top-color: var(--green); }
-    ul { margin: 12px 0 0; padding-left: 20px; }
-    .whatsapp { background: linear-gradient(135deg, #e7fff5, #ffffff); }
-    .whatsapp-box { background: white; border-radius: 36px; padding: 36px; box-shadow: var(--shadow); border: 4px solid var(--green); text-align: center; }
-    .bonus .card { text-align: center; border-bottom: 8px solid var(--yellow); }
-    .offer { background: radial-gradient(circle at top left, #fff3b0, transparent 35%), radial-gradient(circle at bottom right, #c7f0ff, transparent 35%), white; }
-    .price-card { max-width: 760px; margin: auto; text-align: center; border: 5px solid var(--red); transform: rotate(-1deg); }
-    .price { font-size: clamp(3rem, 7vw, 5.8rem); font-weight: 1000; color: var(--red); line-height: 1; margin: 20px 0 8px; }
-    .date-box { display: inline-block; background: var(--dark); color: white; border-radius: 18px; padding: 10px 16px; font-weight: 900; margin: 12px 0; }
-    .faq-item { background: white; border-radius: 20px; padding: 18px 20px; margin-bottom: 12px; box-shadow: 0 8px 18px rgba(31, 41, 55, 0.06); }
-    .faq-item strong { color: var(--blue); }
-    .final { text-align: center; background: linear-gradient(135deg, var(--red), #ff8c42); color: white; }
-    .final .section-title { color: white; }
-    footer { background: var(--dark); color: white; padding: 34px 0; text-align: center; }
-    .socials { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
-    .socials a { background: rgba(255,255,255,0.1); padding: 10px 14px; border-radius: 999px; font-weight: 800; }
-    .floating-whatsapp { position: fixed; right: 18px; bottom: 18px; z-index: 30; background: #25d366; color: white; width: 62px; height: 62px; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: var(--shadow); font-size: 1.9rem; }
-    @media (max-width: 860px) {
-      .hero-grid, .split, .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-      .nav-links { display: none; }
-      .hero { padding-top: 45px; }
-      .hero-card, .price-card { transform: rotate(0); }
-    }
-  </style>
-</head>
-<body>
-  <a class="floating-whatsapp" href="https://wa.me/message/4KJH22ULJCVYH1" target="_blank" aria-label="WhatsApp">💬</a>
 
-  <header class="topbar">
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:var(--tan-cream);
+      color:var(--tan-blue);
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .container{width:min(1120px,92%);margin:auto}
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:40;
+      background:rgba(254,252,248,.94);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(7,59,76,.08);
+    }
+    .nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:12px 0;
+      gap:18px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:1000;
+      font-size:1.05rem;
+    }
+    .brand img{
+      width:54px;
+      height:54px;
+      object-fit:contain;
+      border-radius:14px;
+    }
+    .nav-links{display:flex;gap:18px;align-items:center;font-size:.95rem;font-weight:900}
+
+    .btn{
+      display:inline-flex;
+      justify-content:center;
+      align-items:center;
+      gap:8px;
+      border:0;
+      border-radius:999px;
+      padding:16px 25px;
+      font-weight:1000;
+      cursor:pointer;
+      transition:.2s ease;
+      box-shadow:0 10px 24px rgba(7,59,76,.12);
+      text-align:center;
+    }
+    .btn:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .btn-red{background:linear-gradient(135deg,var(--tan-red),#ff6b6b);color:white}
+    .btn-green{background:linear-gradient(135deg,#18a66f,var(--tan-green));color:white}
+    .btn-blue{background:linear-gradient(135deg,var(--tan-blue),#0d6b84);color:white}
+    .btn-yellow{background:linear-gradient(135deg,var(--tan-yellow),#ffd166);color:var(--tan-blue)}
+
+    .announcement{
+      background:var(--tan-blue);
+      color:white;
+      text-align:center;
+      padding:10px 16px;
+      font-weight:900;
+      font-size:.95rem;
+    }
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      padding:72px 0 65px;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(245,178,60,.38), transparent 25%),
+        radial-gradient(circle at 90% 18%, rgba(255,51,71,.22), transparent 25%),
+        radial-gradient(circle at 75% 95%, rgba(59,181,146,.25), transparent 28%),
+        linear-gradient(180deg,#fefcf8 0%,#fff6df 100%);
+    }
+    .hero:before{
+      content:"🎈 🎉 ✨ 🎈";
+      position:absolute;
+      right:-30px;
+      top:90px;
+      font-size:4.2rem;
+      opacity:.13;
+      transform:rotate(18deg);
+    }
+    .hero:after{
+      content:"";
+      position:absolute;
+      width:260px;height:260px;
+      border-radius:50%;
+      background:var(--tan-yellow);
+      left:-120px;bottom:-80px;
+      opacity:.24;
+    }
+    .hero-grid{
+      position:relative;
+      z-index:2;
+      display:grid;
+      grid-template-columns:1.06fr .94fr;
+      align-items:center;
+      gap:42px;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:white;
+      border:3px solid var(--tan-yellow);
+      padding:10px 16px;
+      border-radius:999px;
+      font-weight:1000;
+      margin-bottom:18px;
+      box-shadow:0 10px 25px rgba(7,59,76,.1);
+    }
+    h1{
+      font-size:clamp(2.5rem,6vw,5.2rem);
+      line-height:.98;
+      margin:0 0 22px;
+      letter-spacing:-2px;
+    }
+    .highlight{color:var(--tan-red)}
+    .subtitle{
+      font-size:clamp(1.08rem,2vw,1.35rem);
+      max-width:720px;
+      margin-bottom:24px;
+      color:#234c5a;
+    }
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}
+    .chip{
+      background:white;
+      border-radius:999px;
+      padding:9px 14px;
+      font-weight:900;
+      box-shadow:0 8px 20px rgba(7,59,76,.08);
+      border:1px solid rgba(7,59,76,.08);
+    }
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .trust-line{margin-top:15px;font-weight:900;color:var(--tan-blue)}
+
+    .hero-card{
+      background:white;
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:var(--shadow);
+      transform:rotate(2deg);
+      border:6px solid var(--tan-yellow);
+      position:relative;
+    }
+    .hero-card:before{
+      content:"Nuevo curso";
+      position:absolute;
+      top:-18px;
+      right:-12px;
+      background:var(--tan-red);
+      color:white;
+      padding:12px 18px;
+      border-radius:999px;
+      font-weight:1000;
+      box-shadow:0 12px 25px rgba(255,51,71,.28);
+    }
+    .hero-card img{
+      width:100%;
+      aspect-ratio:4/5;
+      object-fit:cover;
+      border-radius:22px;
+      background:linear-gradient(135deg,#ffe8a3,#dff7ff);
+    }
+    .hero-note{text-align:center;font-weight:1000;color:var(--tan-green);margin-top:12px}
+
+    section{padding:74px 0}
+    .section-title{
+      font-size:clamp(2rem,4vw,3.25rem);
+      line-height:1.05;
+      margin:0 0 18px;
+      letter-spacing:-1px;
+      text-align:center;
+    }
+    .section-text{
+      max-width:820px;
+      margin:0 auto 38px;
+      text-align:center;
+      font-size:1.12rem;
+      color:#315766;
+    }
+    .grid{display:grid;gap:20px}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .grid-4{grid-template-columns:repeat(4,1fr)}
+    .card{
+      background:white;
+      border-radius:var(--radius);
+      padding:26px;
+      box-shadow:0 10px 30px rgba(7,59,76,.08);
+      border:1px solid rgba(7,59,76,.07);
+    }
+    .card h3{margin:0 0 10px;font-size:1.35rem;color:var(--tan-blue)}
+    .card p{color:#315766}
+    .icon{
+      width:58px;height:58px;
+      border-radius:18px;
+      display:flex;align-items:center;justify-content:center;
+      font-size:1.85rem;
+      margin-bottom:14px;
+      background:var(--tan-yellow);
+    }
+    ul{margin:12px 0 0;padding-left:20px;color:#315766}
+
+    .intro-video{
+      background:linear-gradient(135deg,var(--tan-blue),#0d6b84);
+      color:white;
+    }
+    .intro-video .section-title,.intro-video .section-text{color:white}
+    .video-wrap{
+      max-width:920px;
+      margin:0 auto;
+      background:white;
+      padding:14px;
+      border-radius:30px;
+      box-shadow:var(--shadow);
+      border:5px solid var(--tan-yellow);
+    }
+    .video-frame{
+      position:relative;
+      width:100%;
+      aspect-ratio:16/9;
+      overflow:hidden;
+      border-radius:22px;
+      background:#000;
+    }
+    .video-frame iframe{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      border:0;
+    }
+    .video-note{
+      max-width:850px;
+      margin:18px auto 0;
+      text-align:center;
+      color:#eaf7fa;
+      font-weight:800;
+    }
+
+    .problem .card:nth-child(2) .icon{background:#ffd1d7}
+    .problem .card:nth-child(3) .icon{background:#d7f6ef}
+    .problem .card:nth-child(4) .icon{background:#fff0c6}
+    .problem .card:nth-child(5) .icon{background:#d8f1ff}
+    .problem .card:nth-child(6) .icon{background:#ffe1b4}
+
+    .audience{
+      background:linear-gradient(135deg,#fff3d8,#ffffff);
+    }
+    .audience .card{border-top:8px solid var(--tan-yellow)}
+    .audience .card:nth-child(even){border-top-color:var(--tan-green)}
+
+    .promise{
+      background:linear-gradient(135deg,var(--tan-blue),#0d6b84);
+      color:white;
+    }
+    .promise .section-title,.promise .section-text{color:white}
+    .promise .card{border-top:8px solid var(--tan-yellow)}
+
+    .result-showcase{
+      background:white;
+    }
+    .showcase-box{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:28px;
+      align-items:center;
+      background:var(--tan-soft);
+      border-radius:38px;
+      padding:30px;
+      box-shadow:var(--shadow);
+      border:1px solid rgba(7,59,76,.08);
+    }
+    .showcase-box img{
+      width:100%;
+      aspect-ratio:4/5;
+      object-fit:cover;
+      border-radius:28px;
+      border:6px solid white;
+      box-shadow:0 14px 30px rgba(7,59,76,.12);
+    }
+    .check-list{display:grid;gap:12px;margin-top:20px}
+    .check-item{
+      background:white;
+      padding:14px 16px;
+      border-radius:18px;
+      font-weight:900;
+      color:var(--tan-blue);
+      box-shadow:0 8px 18px rgba(7,59,76,.06);
+    }
+
+    .learn .card{border-top:8px solid var(--tan-red)}
+    .learn .card:nth-child(even){border-top-color:var(--tan-yellow)}
+    .learn .card:nth-child(3n){border-top-color:var(--tan-green)}
+
+    .whatsapp{background:linear-gradient(135deg,#e7fff5,#fff)}
+    .whatsapp-box{
+      background:white;
+      border-radius:36px;
+      padding:38px;
+      box-shadow:var(--shadow);
+      border:5px solid var(--tan-green);
+      text-align:center;
+    }
+    .bonus .card{text-align:center;border-bottom:8px solid var(--tan-yellow)}
+
+    .price-section{
+      background:
+        radial-gradient(circle at top left,rgba(245,178,60,.35),transparent 35%),
+        radial-gradient(circle at bottom right,rgba(59,181,146,.28),transparent 35%),
+        white;
+    }
+    .price-card{
+      max-width:850px;
+      margin:auto;
+      text-align:center;
+      border:6px solid var(--tan-red);
+      box-shadow:var(--shadow);
+      transform:rotate(-1deg);
+    }
+    .price{
+      font-size:clamp(3.4rem,9vw,6.5rem);
+      font-weight:1000;
+      color:var(--tan-red);
+      line-height:1;
+      margin:18px 0 8px;
+      letter-spacing:-3px;
+    }
+    .date-box{
+      display:inline-block;
+      background:var(--tan-blue);
+      color:white;
+      border-radius:18px;
+      padding:10px 16px;
+      font-weight:1000;
+      margin:12px 0;
+    }
+    .value-row{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:20px 0}
+    .value-pill{background:var(--tan-soft);padding:9px 13px;border-radius:999px;font-weight:900;color:var(--tan-blue)}
+    .mini-note{font-size:.95rem;color:#50626a}
+
+    .faq-item{
+      background:white;
+      border-radius:20px;
+      padding:18px 20px;
+      margin-bottom:12px;
+      box-shadow:0 8px 18px rgba(7,59,76,.06);
+    }
+    .faq-item strong{color:var(--tan-red)}
+
+    .final{
+      text-align:center;
+      background:
+        linear-gradient(135deg,rgba(255,51,71,.95),rgba(245,178,60,.95)),
+        var(--tan-red);
+      color:white;
+    }
+    .final .section-title,.final .section-text{color:white}
+    .final .price-card{background:white;color:var(--tan-blue)}
+
+    footer{background:var(--tan-blue);color:white;padding:38px 0;text-align:center}
+    .footer-logo{width:150px;margin:0 auto 16px;filter:drop-shadow(0 12px 18px rgba(0,0,0,.18))}
+    .socials{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:16px}
+    .socials a{background:rgba(255,255,255,.12);padding:10px 14px;border-radius:999px;font-weight:900}
+    .floating-whatsapp{
+      position:fixed;right:18px;bottom:18px;z-index:30;
+      background:#25d366;color:white;width:64px;height:64px;
+      display:flex;justify-content:center;align-items:center;
+      border-radius:50%;box-shadow:var(--shadow);font-size:1.9rem;
+    }
+
+    @media(max-width:860px){
+      .hero-grid,.grid-2,.grid-3,.grid-4,.showcase-box{grid-template-columns:1fr}
+      .nav-links{display:none}
+      .hero{padding-top:42px}
+      .hero-card,.price-card{transform:rotate(0)}
+      h1{letter-spacing:-1px}
+      .hero-actions .btn{width:100%}
+      .brand img{width:46px;height:46px}
+      .showcase-box{padding:18px}
+    }
+  </style></head>
+<body>
+  <div class="announcement">🎈 Nuevo curso online · Inicia el 22 de junio · Acompañamiento por comunidad privada</div>
+  <a class="floating-whatsapp" href="https://wa.me/message/4KJH22ULJCVYH1" target="_blank" aria-label="Preguntar por WhatsApp">💬</a>  <header class="topbar">
     <div class="container nav">
-      <a href="#inicio" class="brand">🎈 Tan Barbudo</a>
+      <a href="#inicio" class="brand">
+        <img src="logo.png" alt="Logo Tan Barbudo" />
+        <span>Tan Barbudo</span>
+      </a>
       <nav class="nav-links">
+        <a href="#video">Video</a>
+        <a href="#para-quien">Para quién es</a>
         <a href="#aprendes">Qué aprenderás</a>
-        <a href="#bonus">Bonus</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn btn-red" href="https://wa.me/message/4KJH22ULJCVYH1" target="_blank">Entrar</a>
+        <a href="#oferta">Oferta</a>
+        <a class="btn btn-red" href="https://wa.me/message/4KJH22ULJCVYH1" target="_blank">Quiero entrar</a>
       </nav>
     </div>
-  </header>
-
-  <main id="inicio">
+  </header>  <main id="inicio">
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="badge">🚀 Comienza el 22 de junio · USD 10</div>
-          <h1>Aprende <span class="highlight">Globoflexia</span> de forma creativa, divertida y paso a paso 🎈</h1>
-          <p class="subtitle">Descubre cómo crear figuras, personajes, sombreros y experiencias increíbles con globos… incluso si empiezas desde cero.</p>
+          <div class="badge">🚀 Curso creativo desde cero</div>
+          <h1>Aprende a crear con globos y transforma una simple figura en una <span class="highlight">experiencia memorable</span> 🎈</h1>
+          <p class="subtitle">Un curso online de globoflexia creativa para personas que quieren sorprender en cumpleaños, clases, eventos, iglesias o comenzar un pequeño emprendimiento con alegría y color.</p>
           <div class="chips">
-            <span class="chip">✅ Más que figuras</span>
-            <span class="chip">✅ Creatividad real</span>
-            <span class="chip">✅ Comunidad</span>
-            <span class="chip">✅ Cumpleaños y eventos</span>
-            <span class="chip">✅ Emprendimiento</span>
+            <span class="chip">✅ Desde cero</span>
+            <span class="chip">✅ Paso a paso</span>
+            <span class="chip">✅ Comunidad WhatsApp</span>
+            <span class="chip">✅ Ideas para eventos</span>
+            <span class="chip">✅ Bonus creativos</span>
           </div>
-          <a class="btn btn-red" href="https://wa.me/message/4KJH22ULJCVYH1" target="_blank">👉 QUIERO MÁS INFORMACIÓN</a>
-        </div>
-        <div class="hero-card">
-          <img src="catalogo.png" alt="Tan Barbudo con globos y figuras coloridas" />
-          <div class="hero-note">Diversión + creatividad + energía</div>
-        </div>
-      </div>
-    </section>
+          <div class="hero-actions">
+            <a class="btn btn-red" href="#video">🎬 Ver de qué se trata</a>
+            <a class="btn btn-yellow" href="https://wa.me/message/4KJH22ULJCVYH1" target="_blank">Preguntar por WhatsApp</a>
+          </div>
+          <p class="trust-line">No necesitas experiencia previa. Necesitas ganas de aprender, practicar y divertirte.</p>
+        </div><div class="hero-card">
+      <img src="catalogo.png" alt="Tan Barbudo mostrando figuras creativas de globoflexia para eventos y cumpleaños" width="700" height="875" />
+      <div class="hero-note">Creatividad + recreación + emprendimiento</div>
+    </div>
+  </div>
+</section>
 
-    <section class="problem">
-      <div class="container">
-        <h2 class="section-title">¿Te pasa esto?</h2>
-        <p class="section-text">La globoflexia puede parecer difícil al principio, pero con una guía clara todo cambia.</p>
-        <div class="grid grid-3">
-          <div class="card"><div class="icon">😕</div><h3>No sabes por dónde empezar</h3><p>Ves figuras hermosas, pero no sabes qué materiales usar ni cómo iniciar.</p></div>
-          <div class="card"><div class="icon">💥</div><h3>Los globos se te explotan</h3><p>Aprenderás cuidado, inflado, manipulación y tips para perder el miedo.</p></div>
-          <div class="card"><div class="icon">🤯</div><h3>No entiendes cómo crear figuras</h3><p>No se trata solo de copiar: aprenderás a construir y combinar formas.</p></div>
-          <div class="card"><div class="icon">🎂</div><h3>Quieres sorprender en eventos</h3><p>Cumpleaños, recreación, clases, iglesias, fiestas y momentos especiales.</p></div>
-          <div class="card"><div class="icon">💰</div><h3>Buscas un ingreso extra</h3><p>Aprenderás ideas prácticas para ofrecer globos, menú visual y servicios.</p></div>
-          <div class="card"><div class="icon">🎈</div><h3>Quieres crear con confianza</h3><p>Vas a practicar con acompañamiento, comunidad y desafíos simples.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2 class="section-title">Imagina pasar de esto… a esto 😎</h2>
-        <p class="section-text">Aprenderás técnicas reales, construcción de figuras, creatividad y aplicaciones prácticas para sorprender y divertirte.</p>
-        <div class="split">
-          <div class="card before-after bad"><span class="label">ANTES</span><div class="big-emoji">😬🎈</div><h3>Globos explotados, figuras torcidas y frustración.</h3><p>Sin técnica, todo parece ensayo y error.</p></div>
-          <div class="card before-after good"><span class="label">DESPUÉS</span><div class="big-emoji">🤩🎈</div><h3>Figuras llamativas, personajes, sombreros e ideas para eventos.</h3><p>Con técnica y creatividad, cada globo puede convertirse en una experiencia.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="features">
-      <div class="container">
-        <h2 class="section-title">Esto NO es solo un curso de figuras</h2>
-        <p class="section-text">Es una experiencia para aprender, crear, practicar y aplicar la globoflexia en la vida real.</p>
-        <div class="grid grid-2">
-          <div class="card"><h3>✅ Creatividad aplicada</h3><p>Aprende a pensar con globos: formas, colores, combinación y propósito.</p></div>
-          <div class="card"><h3>✅ Construcción de personajes</h3><p>Cuerpos, pies, proporciones, estilo chibi y recursos visuales.</p></div>
-          <div class="card"><h3>✅ Recreación y cumpleaños</h3><p>Ideas para entretener, sorprender y crear momentos memorables.</p></div>
-          <div class="card"><h3>✅ Menú de globos para vender</h3><p>Organiza tus opciones, presenta tus figuras y empieza a ofrecerlas mejor.</p></div>
-          <div class="card"><h3>✅ Comunidad por WhatsApp</h3><p>Comparte avances, pregunta, recibe tips y aprende con otros alumnos.</p></div>
-          <div class="card"><h3>✅ Seguimiento real</h3><p>No compras un video suelto: entras a una comunidad creativa con acompañamiento.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="aprendes" class="learn">
-      <div class="container">
-        <h2 class="section-title">Todo lo que aprenderás</h2>
-        <p class="section-text">Contenido práctico, claro y pensado para que puedas comenzar desde cero y crecer paso a paso.</p>
-        <div class="grid grid-3">
-          <div class="card"><div class="icon">🎈</div><h3>Fundamentos</h3><ul><li>Materiales</li><li>Tipos de globos</li><li>Inflado</li><li>Cuidado y duración</li></ul></div>
-          <div class="card"><div class="icon">🌀</div><h3>Técnicas</h3><ul><li>Torciones</li><li>Burbujas</li><li>Técnica 4x4</li><li>Seguridad y práctica</li></ul></div>
-          <div class="card"><div class="icon">🌸</div><h3>Figuras funcionales</h3><ul><li>Flores</li><li>Espadas</li><li>Sombreros</li><li>Figuras rápidas</li></ul></div>
-          <div class="card"><div class="icon">🤹</div><h3>Diseño y personajes</h3><ul><li>Cuerpos</li><li>Pies</li><li>Estilo chibi</li><li>Creatividad visual</li></ul></div>
-          <div class="card"><div class="icon">🎉</div><h3>Eventos</h3><ul><li>Cumpleaños</li><li>Recreación</li><li>Decoración básica</li><li>Experiencias con globos</li></ul></div>
-          <div class="card"><div class="icon">💼</div><h3>Emprendimiento</h3><ul><li>Precios</li><li>Clientes</li><li>Canva</li><li>Menú de globos</li></ul></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="whatsapp">
-      <div class="container">
-        <div class="whatsapp-box">
-          <h2 class="section-title">No aprenderás solo 🎈</h2>
-          <p class="section-text">Tendrás acceso a una comunidad privada por WhatsApp donde podrás compartir tus figuras, hacer preguntas, recibir tips, ver ideas nuevas y crecer junto a otros alumnos.</p>
-          <h3>"No es solo un curso… es una comunidad creativa."</h3>
-          <a class="btn btn-blue" href="https://wa.me/message/4KJH22ULJCVYH1" target="_blank">💬 Preguntar por WhatsApp</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="bonus" class="bonus">
-      <div class="container">
-        <h2 class="section-title">BONUS ESPECIALES</h2>
-        <p class="section-text">Además del contenido principal, tendrás recursos para usar la globoflexia con más creatividad.</p>
-        <div class="grid grid-4">
-          <div class="card"><div class="big-emoji">🎭</div><h3>Historias y rutinas</h3></div>
-          <div class="card"><div class="big-emoji">🎈</div><h3>Trucos con globos</h3></div>
-          <div class="card"><div class="big-emoji">🎉</div><h3>Dinámicas recreativas</h3></div>
-          <div class="card"><div class="big-emoji">✨</div><h3>Ideas para sorprender</h3></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="offer" id="oferta">
-      <div class="container">
-        <div class="card price-card">
-          <h2 class="section-title">Empieza hoy mismo 🚀</h2>
-          <div class="date-box">Inicio: 22 de junio</div>
-          <p>Incluye curso completo, videos privados, comunidad WhatsApp, bonus especiales, menú de globos, ideas y tips.</p>
-          <div class="price">USD 10</div>
-          <p><strong>Pago único — acceso al contenido y acompañamiento.</strong></p>
-          <a class="btn btn-red" href="https://wa.me/message/4KJH22ULJCVYH1" target="_blank">👉 QUIERO ENTRAR</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq">
-      <div class="container">
-        <h2 class="section-title">Preguntas frecuentes</h2>
-        <div class="faq-item"><strong>¿Necesito experiencia?</strong><br>No. El curso está pensado para comenzar desde cero.</div>
-        <div class="faq-item"><strong>¿Las clases quedan grabadas?</strong><br>Sí. Tendrás acceso a videos privados del curso.</div>
-        <div class="faq-item"><strong>¿Cuánto duran las clases?</strong><br>Entre 15 y 20 minutos aproximadamente.</div>
-        <div class="faq-item"><strong>¿Hay seguimiento?</strong><br>Sí, por medio de la comunidad privada de WhatsApp.</div>
-        <div class="faq-item"><strong>¿Sirve para cumpleaños?</strong><br>Sí. Aprenderás ideas aplicables a cumpleaños, recreación y eventos.</div>
-        <div class="faq-item"><strong>¿Puedo usarlo para vender?</strong><br>Sí. También veremos ideas para precios, clientes, Canva y menú de globos.</div>
-      </div>
-    </section>
-
-    <section class="final">
-      <div class="container">
-        <h2 class="section-title">Cada figura empieza con un globo… y un intento 🎈</h2>
-        <p class="section-text">No necesitas ser experto para comenzar. Solo necesitas ganas de aprender, practicar y divertirte.</p>
-        <a class="btn btn-blue" href="https://wa.me/message/4KJH22ULJCVYH1" target="_blank">👉 ENTRA AHORA Y DESCUBRE TODO</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <strong>🎈 Curso Globoflexia Creativo y Personalizado</strong><br />
-      By Tan Barbudo · USD 10 · Inicio 22 de junio
-      <div class="socials">
-        <a href="https://www.instagram.com/payasotanbarbudo?igsh=dWo2a3U0ZmhiNWdn" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/share/1CyiA78nQJ/" target="_blank">Facebook</a>
-        <a href="https://youtube.com/@payasotanbarbudo?si=orYgWrJ4gCb75uxn" target="_blank">YouTube</a>
-        <a href="https://www.tiktok.com/@payasotanbarbudo?_r=1&_t=ZS-94L1Ar177eG" target="_blank">TikTok</a>
-        <a href="https://wa.me/message/4KJH22ULJCVYH1" target="_blank">WhatsApp</a>
-        <a href="https://whatsapp.com/channel/0029VadZPwbC6ZveKodyvh41" target="_blank">Canal WhatsApp</a>
-        <a href="https://tanbarbudo-elpayaso.blogspot.com/?m=1" target="_blank">Blog</a>
+<section id="video" class="intro-video">
+  <div class="container">
+    <h2 class="section-title">Mira la idea del curso en video</h2>
+    <p class="section-text">Antes de decidir, mira cómo este curso puede ayudarte a usar la globoflexia como herramienta de creatividad, recreación y oportunidad.</p>
+    <div class="video-wrap">
+      <div class="video-frame">
+        <!-- REEMPLAZA VIDEO_ID_AQUI por el ID de tu video de YouTube. Ejemplo: https://www.youtube.com/watch?v=ABC123 => usa ABC123 -->
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_AQUI" title="Video del curso de globoflexia Tan Barbudo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
-  </footer>
-</body>
-</html>
+    <p class="video-note">Tip: cuando tengas el video oficial, solo cambia VIDEO_ID_AQUI por el ID real del video.</p>
+  </div>
+</section>
+
+<section class="problem">
+  <div class="container">
+    <h2 class="section-title">¿Te gustaría hacer algo creativo, pero no sabes por dónde comenzar?</h2>
+    <p class="section-text">La globoflexia parece difícil cuando solo ves el resultado final. Este curso te lleva por el proceso para que entiendas, practiques y crees con confianza.</p>
+    <div class="grid grid-3">
+      <div class="card"><div class="icon">😕</div><h3>No sabes qué practicar primero</h3><p>Aprenderás una ruta clara para avanzar sin perderte entre tutoriales sueltos.</p></div>
+      <div class="card"><div class="icon">💥</div><h3>Los globos se te explotan</h3><p>Conocerás tips de inflado, cuidado y manipulación para practicar con más seguridad.</p></div>
+      <div class="card"><div class="icon">🤯</div><h3>Copias, pero no entiendes</h3><p>El objetivo no es memorizar figuras, sino aprender cómo se construyen.</p></div>
+      <div class="card"><div class="icon">🎂</div><h3>Quieres destacar en eventos</h3><p>Una figura puede ser el detalle que hace que un cumpleaños o clase se recuerde.</p></div>
+      <div class="card"><div class="icon">💰</div><h3>Quieres sumar una habilidad útil</h3><p>La globoflexia puede abrirte puertas en recreación, animación y servicios creativos.</p></div>
+      <div class="card"><div class="icon">🎈</div><h3>Quieres aprender acompañado</h3><p>Tendrás comunidad para preguntar, mostrar avances y mantenerte motivado.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="para-quien" class="audience">
+  <div class="container">
+    <h2 class="section-title">Este curso es para ti si...</h2>
+    <p class="section-text">No importa si empiezas desde cero. Lo importante es que quieras aprender una herramienta alegre, práctica y aplicable.</p>
+    <div class="grid grid-4">
+      <div class="card"><div class="icon">🤹</div><h3>Eres recreador o animador</h3><p>Quieres sumar un recurso visual que encanta a niños y familias.</p></div>
+      <div class="card"><div class="icon">🎂</div><h3>Haces cumpleaños o eventos</h3><p>Quieres ofrecer algo más llamativo y memorable.</p></div>
+      <div class="card"><div class="icon">👩‍🏫</div><h3>Eres maestro o líder infantil</h3><p>Quieres captar atención con recursos simples y creativos.</p></div>
+      <div class="card"><div class="icon">💼</div><h3>Quieres emprender</h3><p>Quieres aprender una habilidad que puedas transformar en servicio.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="promise">
+  <div class="container">
+    <h2 class="section-title">No es solo aprender figuras. Es aprender a crear momentos.</h2>
+    <p class="section-text">El verdadero valor está en saber qué hacer con la globoflexia: entretener, enseñar, vender, ministrar, decorar, sorprender y conectar con las personas.</p>
+    <div class="grid grid-3">
+      <div class="card"><h3>🎈 Técnica simple</h3><p>Fundamentos claros para que entiendas el inflado, las burbujas, las torsiones y la construcción.</p></div>
+      <div class="card"><h3>🎉 Aplicación real</h3><p>Ideas para cumpleaños, celebraciones, clases, eventos, iglesias y actividades recreativas.</p></div>
+      <div class="card"><h3>💬 Acompañamiento</h3><p>Comunidad privada para compartir avances, hacer preguntas y recibir motivación.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="result-showcase">
+  <div class="container">
+    <h2 class="section-title">Mira lo que puedes lograr con práctica guiada</h2>
+    <p class="section-text">Cuando aprendes la lógica de la globoflexia, dejas de depender de un tutorial específico y empiezas a combinar ideas para crear tus propias figuras.</p>
+    <div class="showcase-box">
+      <img src="catalogo.png" alt="Ejemplos de creatividad con globos en el curso de Tan Barbudo" width="700" height="875" />
+      <div>
+        <h3 style="font-size:2rem;margin-top:0">Una habilidad pequeña puede abrir grandes oportunidades</h3>
+        <p>Con globos puedes alegrar un cumpleaños, captar la atención de un grupo, crear una dinámica, regalar una figura, decorar un momento o comenzar a ofrecer un servicio creativo.</p>
+        <div class="check-list">
+          <div class="check-item">✅ Figuras para niños y familias</div>
+          <div class="check-item">✅ Sombreros y recursos visuales</div>
+          <div class="check-item">✅ Personajes y estilo creativo</div>
+          <div class="check-item">✅ Ideas para eventos y emprendimiento</div>
+          <div class="check-item">✅ Menú de globos para presentar tu servicio</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aprendes" class="learn">
+  <div class="container">
+    <h2 class="section-title">
